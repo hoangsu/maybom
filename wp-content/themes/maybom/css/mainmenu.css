@@ -1,0 +1,58 @@
+﻿.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: bold 12px Arial;
+width: 220px; /* Main Menu Item widths */
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+background:url(images/cart-main.jpg) no-repeat;
+
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: #333;
+text-decoration: none;
+padding-left: 20px;
+
+height:33px;
+line-height:33px;
+/*border-bottom: 1px solid #2798F8;*/
+}
+.sidebarmenu ul li a:link
+{
+	
+}
+.sidebarmenu ul li a:visited
+{
+}
+.sidebarmenu ul li a:active{
+/*background: #012D58; background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: #333;
+}
+
+.sidebarmenu ul li a:hover
+{
+background:url(images/hover-cart-main.jpg) no-repeat;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+position: absolute;
+width: 220px; /*Sub Menu Items width */
+top: 0;
+visibility: hidden;
+z-index: 3000;
+}
+
+.sidebarmenu a.subfolderstyle{
+background: background:url(images/cart-main.jpg) no-repeat;
+}
