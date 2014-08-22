@@ -14,9 +14,9 @@
           <div class="title_sv"> Danh mục sản phẩm </div>
         </div>
         <div class="bot_left">
-          <ul class="accordion cateUl" id="accordion-2">
-            <li class="dcjq-parent-li"><a href="#" title="Elevators" class="dcjq-parent">Máy bơm công nghiệp<span class="dcjq-icon"></span></a> </li>
-            <li class="dcjq-parent-li"><a href="#" title="Escalators" class="dcjq-parent">Máy bơm tăng áp<span class="dcjq-icon"></span></a>
+          <ul>
+            <li><a href="#" title="Elevators" class="dcjq-parent">Máy bơm công nghiệp</a> </li>
+            <li><a href="#" title="Escalators" class="dcjq-parent">Máy bơm tăng áp</a>
             </li>
           </ul>
         </div>
@@ -30,7 +30,7 @@
         <div class="group_pr">
           <div class="pro_sp_pr">
             <div class="pro_pr">
-              <div class="block_img"> <a href="#"> <img src="wp-content/uploads/2014/08/pw.jpg" height="126" width="206" alt="" title=""></a> </div>
+              <div class="block_img"> <a href="#"> <img src="/wp-content/uploads/2014/08/pw.jpg" height="126" width="206" alt="" title=""></a> </div>
             </div>
             <div class="bongtt"> </div>
             <div class="pro-name22">

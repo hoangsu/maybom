@@ -151,12 +151,13 @@ text-transform: uppercase;
 	background:url(images/btn_l1.png) no-repeat 6px;
 	padding-left:20px; display: inline-block;
 }
-#svice > li > a:hover,.block_left .bot_left > ul > li a:hover
+#svice > li > a:hover
 {
 	color:#067b00;
-	background:url(images/btn_l2.png) no-repeat 6px 4px;
+	background:url(images/btn_l2.png) no-repeat 6px 8px;
 }
-
+.block_left .bot_left > ul > li a:hover {color:#067b00;
+	background:url(images/btn_l2.png) no-repeat 6px 3px;}
 .diachi
 {
 background: url(images/img_home.jpg) no-repeat left;
