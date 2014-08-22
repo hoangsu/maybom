@@ -1,7 +1,9 @@
-</div>
-<div id="footer1">
-  <div id="footer">
-    <?php dynamic_sidebar('footer')?>
+ <div class="clear"></div>
+<div class="footer">
+    <div class="inner">
+            <div class="copyright">
+              <?php dynamic_sidebar('footer')?>
+            </div>
   </div>
   <!--end #footer--> 
   

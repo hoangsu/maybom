@@ -99,7 +99,9 @@ ul.underlinemenu li{
 display: inline;
 background: url(../images/menu_li_bg.png) no-repeat right top;
 }
-
+ul.underlinemenu li:hover {
+border-bottom: 1px solid #34a94b;
+}
 ul.underlinemenu li a{
 margin-right: 10px;
 margin-left: 10px;

@@ -1,10 +1,21 @@
 <?php get_header(); ?>
-
-<div class="wrapper-body">
-  <?php get_sidebar();?>
-  <div id="main-content">
-    <div id="con-main-content">
-      <div id="contenbg"> <?php single_cat_title();?></div>
+<div id="wrap">
+  <div class="trant"> 
+<div class="breadcrumbs">
+    <?php if(function_exists('bcn_display'))
+    {
+        bcn_display();
+    }?>
+</div>  </div>
+  <div class="block_main_sv">
+    <div class="left_sv">
+          <?php dynamic_sidebar('Bài viết mới nhất')?>
+      <div class="img_logo"> <img src="/wp-content/uploads/2014/08/panasonic.png" > <img src="/wp-content/uploads/2014/08/lo_go_pedrollo_1.gif" ></div>
+    </div>
+    <div class="right_sv">
+      <div class="img_pro"><?php include (TEMPLATEPATH . '/banner.php'); ?>    </div>
+      <div class="txt">
+        <div class="text_titl"> Tin tức</div>
       <div class="block-tintuc-content">
         <div class="block-tintuc-trong">
           <div class="news-list1">
@@ -42,19 +53,18 @@ if ( $wp_query->max_num_pages > 1 ) {?>
         <span style="border: 1px solid #ccc; padding: 5px 10px;">Trang</span><span>
 <?php    } 
 echo paginate_links( array(
-	'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-	'format' => '?paged=%#%',
-	'current' => max( 1, get_query_var('paged') ),
-	'total' => $wp_query->max_num_pages
+  'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+  'format' => '?paged=%#%',
+  'current' => max( 1, get_query_var('paged') ),
+  'total' => $wp_query->max_num_pages
 ) );
 ?>
               </span></div>
           </div>
         </div>
       </div>
-      <div class="block-boot-content"></div>
+      </div>
     </div>
   </div>
-  <div class="clear-both"> </div>
 </div>
 <?php get_footer();?>

@@ -1,22 +1,30 @@
 <?php 
 add_theme_support('menus');
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'member-thumb-grid', 312, 219, true );
-add_image_size( 'member-thumb-list', 155, 67, true ); 
-add_image_size( 'category-thumb-list', 247, 215, true ); 
 
 register_nav_menus(array(
 		'primary' => 'Main Menu',
 		'left' => 'Left Menu'
 	));
-
 if(function_exists('register_sidebar')){
 	register_sidebar(array(
-		'name'=>'Left Sidebar',
-		'before_title' => '<div class="hot-news-header">',
-		'after_title' => '</div>',
-		'before_widget' => '<div id="thongke12">',
-		'after_widget' => '<div class="right-block-bottom"></div></div>'
+		'name'=>'Giới thiệu công ty',
+		'before_widget' => '',
+		'after_widget' => ''
+	));
+	};
+if(function_exists('register_sidebar')){
+	register_sidebar(array(
+		'name'=>'Người VN dùng hàng VN',
+		'before_widget' => '',
+		'after_widget' => ''
+	));
+	};
+if(function_exists('register_sidebar')){
+	register_sidebar(array(
+		'name'=>'địa chỉ',
+		'before_widget' => '',
+		'after_widget' => ''
 	));
 	};
 if(function_exists('register_sidebar')){
@@ -28,9 +36,27 @@ if(function_exists('register_sidebar')){
 	};
 if(function_exists('register_sidebar')){
 	register_sidebar(array(
-		'name'=>'List all products',
+		'name'=>'Bài viết mới nhất',
+		'before_title' => '<div class="top_left"><div class="title_sv">',
+		'after_title' => '</div></div><div class="bot_left">',
+		'before_widget' => '<div class="block_left">',
+		'after_widget' => '</div></div>'
+	));
+	};
+if(function_exists('register_sidebar')){
+	register_sidebar(array(
+		'name'=>'banner',
 		'before_widget' => '',
 		'after_widget' => ''
+	));
+	};
+if(function_exists('register_sidebar')){
+	register_sidebar(array(
+		'name'=>'Danh mục sản phẩm',
+		'before_title' => '<div class="top_left"><div class="title_sv">',
+		'after_title' => '</div></div><div class="bot_left">',
+		'before_widget' => '<div class="block_left">',
+		'after_widget' => '</div></div>'
 	));
 	};
 function new_excerpt_more($more) {

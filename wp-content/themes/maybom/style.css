@@ -14,7 +14,7 @@ Tags: máy bơm nước
     height: 343px;
     width: 238px;
 }
-/* Tuyen.IT */
+/*  */
 .img_247 > img {
     height: 157px;
     width: 238px;
@@ -29,7 +29,7 @@ Tags: máy bơm nước
 	float: left;
 	margin-bottom: 16px;
 }
-/* Tuyen.IT */
+/*  */
 
 
 @font-face {
@@ -86,17 +86,16 @@ width: 247px;
 float: left;
 padding-bottom: 1px;
 }
-#svice
+#svice,.block_left .bot_left > ul
 {
-line-height: 24px;
 width: 245px;
 margin-left: 1px;
 background: url(images/bgmain.png) repeat-x bottom;
 	color:#333333;
 }
-#svice > li
+#svice > li,.block_left .bot_left > ul > li
 {
-	border-top: solid 1px #ccc;
+	border-top: solid 1px #ccc; padding:5px 0;
 
 }
 .text_lp a
@@ -142,26 +141,20 @@ text-transform: uppercase;
 	padding-left:20px;
 	
 }
-#svice > li > a
+#svice > li > a,.block_left .bot_left > ul > li a
 {
 
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
 	font-weight:bold;
 	text-transform:capitalize !important;
-	background:url(images/btn_l1.png) no-repeat left;
-	padding-left:20px;
-	margin-left: 20px;
+	background:url(images/btn_l1.png) no-repeat 6px;
+	padding-left:20px; display: inline-block;
 }
-#svice > li > a:hover
+#svice > li > a:hover,.block_left .bot_left > ul > li a:hover
 {
 	color:#067b00;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
-	font-weight:bold;
-	text-transform:capitalize;
-	background:url(images/btn_l2.png) no-repeat left;
-	padding-left:20px;
+	background:url(images/btn_l2.png) no-repeat 6px 4px;
 }
 
 .diachi
@@ -1485,7 +1478,6 @@ div.show_index
 {
 	float:left;
 	width:650px;
-	height:330px;
 }
 .name
 {
@@ -2139,15 +2131,13 @@ border: solid 1px #c0c0c0;height: 21px;
 width: 149px;
 
 }
-input#btnSearch{float: right;
+input#btnSearch{
+display: inline-block; vertical-align: top;
 height: 23px;
-margin-left: 5px;
 border: none;
 cursor: pointer;
 height: 22px;
 width: 60px;
-
-z-index: 1000;
 background: #a3a3a3;
 font-size: 12px;
 color: #fff;
@@ -3357,40 +3347,7 @@ position: relative;
 display: inline-block;
 
 }
-.caroufredsel_wrapper{
-	width: 648px !important;
-}
-a.prev{
-	background:url(images/icon_01.png) no-repeat;
-	position:absolute;
-	top: 55px;
-	left: -30px;
-	z-index:10;
-	display: block;
-	width:40px;
-	height:49px;
-}
 
-a.next{
-	position:absolute;
-	top:55px;
-	right: -30px;
-	z-index:10;
-	display: block;
-	background:url(images/icon_02.png) no-repeat;
-	width:40px;
-	height:49px;
-}
-a.prev:hover {
-background:url(images/btn_left.png) no-repeat;
-}
-a.next:hover {
-
-background:url(images/btn_right.png) no-repeat;
-position: absolute;
-top: 56px;
-right: -34px;
-}
 
 /*---------------SCROLL SAN PHAM BIG SALE-----------------*/
 .image_carousel {
@@ -3429,4 +3386,83 @@ a.block-scroll{
 }
 .product_info table tr td{
     
+}
+.footer {border-top:solid 1px #067b00; margin-top: 40px; height: 25px; }
+.footer .copyright {line-height: 25px;}
+.inner {width: 963px; margin: auto;}
+.bongtt {background:url(images/bong_tt.png) no-repeat;height:18px;width:204px;float: left;}
+
+.block-tintuc-content {
+    background: none repeat scroll 0 0 #ffffff;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 0 1px;
+    width: 706px;
+}
+.block-tintuc-trong {
+    background: url("images/indsdex.png") repeat-x scroll 0 100% transparent;
+    float: left;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    width: 696px;
+}
+
+.news-list1 ul li {
+    float: left;
+}
+.news-title1 {
+    color: Black;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}.news-list1 img {
+    border-radius: 6px;
+    float: left;
+    height: auto;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 2px;
+    width: 95px;
+}
+.news-title1 {
+    color: Black;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.posted-time1 {
+    color: #666;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.news-desc1, .news-details1 {
+    font-weight: normal;
+    line-height: 20px;
+    text-align: justify;
+}
+.view-details1 {
+    float: right; color: #1b75bd;
+}
+.article_seperator {
+    background: url("images/sep.gif") repeat-x scroll center center transparent;
+    clear: both;
+    display: block;
+    height: 10px;
+    margin: 0;
+}.pager {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.pager span a {color:#1b75bd;}
+.pager span b, .pager span a ,.pager span.current{
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    padding: 5px 10px;
 }
